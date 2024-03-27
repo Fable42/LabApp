@@ -21,10 +21,11 @@
     <%= form.text_area :description %>
   </div>
 
-  <div>
-    <%= form.label :grade, style: "display: block" %>
-    <%= form.text_field :grade %>
-  </div>
+  <%= form.label "Grade:" %>
+  <% ['A', 'B', 'C', 'D', 'E', 'FX', 'F'].each do |grade| %>
+    <%= form.radio_button :grade, grade %>
+    <%= grade %>
+  <% end %>
 
   <div>
     <%= form.submit %>
