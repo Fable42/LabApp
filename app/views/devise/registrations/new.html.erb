@@ -4,13 +4,13 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :first name %><br />
-    <%= f.email_field :first_name, autofocus: true, autocomplete: "first_name" %>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name" %>
   </div>
   
   <div class="field">
-    <%= f.label :second name %><br />
-    <%= f.email_field :second_name, autofocus: true, autocomplete: "second_name" %>
+    <%= f.label :second_name %><br />
+    <%= f.text_field :second_name, autofocus: true, autocomplete: "second_name" %>
   </div>
 
   <div class="field">
