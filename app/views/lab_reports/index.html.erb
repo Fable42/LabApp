@@ -1,12 +1,12 @@
 <h1>Lab reports</h1>
 
+<%= button_to "New lab report", new_lab_report_path %>
+
 <div id="lab_reports">
   <% @lab_reports.each do |lab_report| %>
     <%= render lab_report %>
-    <p>
+    <p style="margin-bottom: 40px">
       <%= link_to "Show this lab report", lab_report %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "New lab report", new_lab_report_path %>

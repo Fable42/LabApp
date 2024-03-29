@@ -11,7 +11,14 @@
   </head>
 
   <header>
-    <%= current_user.first_name %>
+    <% if user_signed_in? %>
+      <div style="display: flex">
+        <%= current_user.first_name %>
+        <%= current_user.second_name%>
+        <%= button_to 'Sign out', destroy_user_session_path, method: :delete %>
+      </div>
+      <hr>
+    <% end %>
   </header>
 
   <p class="notice" style="color: green"><%= notice %></p>
