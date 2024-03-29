@@ -68,3 +68,4 @@ end
 
 # Add devise
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem "tailwindcss-rails", "~> 2.3"
